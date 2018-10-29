@@ -5,7 +5,7 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
-    "postinstall": "npm rebuild node-sass",
+    "postinstall": "npm rebuild node-sass && gulp copyfiles",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
@@ -33,13 +33,14 @@
     "ej-angular2": "^15.2.41",
     "expose-loader": "^0.7.3",
     "file-loader": "^0.11.1",
+    "gulp": "^3.9.1",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
     "jquery": "^3.2.1",
     "rxjs": "^6.1.0",
     "rxjs-compat": "^6.2.2",
     "sw-toolbox": "3.6.0",
-    "syncfusion-javascript": "^15.2.41",
+    "syncfusion-javascript": "*",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
